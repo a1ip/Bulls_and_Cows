@@ -1,0 +1,1 @@
+.container {    display: flex;    justify-content: center;    align-items: center;    margin: 0 auto;    width: 100%;    min-width: 200px;    flex-wrap: wrap;    justify-content: center;    flex-direction: column;}.title {    justify-content: center;    margin: 0 auto;}.buttonTest {    margin: 0 auto;    margin-top: 20px;}.submit {    margin: 20px;}
