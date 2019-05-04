@@ -28,7 +28,7 @@ function createRand(randLength, min, max) {
         }
     }
     return randArray;
-}
+} 
 
 // функция  с логикой работы игры
 function bullsAndCows() {
@@ -38,7 +38,8 @@ function bullsAndCows() {
     let uTry = document.getElementById('input_lag').value.slice(0, 4);
 
     if (randomNum === uTry) {
-        story.insertAdjacentHTML('afterend', '<b style="color:green">' + uTry + '<br>Мои поздравления! В этот раз вы победили! <br> Правильный ответ был  ' + randomNum );
+        story.insertAdjacentHTML('afterend', '<b style="color:green">' + uTry + 
+        '<br>Мои поздравления! В этот раз вы победили! <br> Правильный ответ был  ' + randomNum );
         return false;
     }
     for (let i = 0; i < 4; i++) {
@@ -47,13 +48,14 @@ function bullsAndCows() {
         } else if (randomNum.indexOf(uTry[i]) >= 0) {
             cows++;
         } else if (counter >= 8) {
-            story.insertAdjacentHTML('beforeBegin', '<b style="color:red">' + '<br>Количество попыток исчерпано! <br>В следующий раз повезет! <br> Правильный ответ был  ' + randomNum );
+            story.insertAdjacentHTML('beforeBegin', '<b style="color:red">' + 
+            '<br>Количество попыток исчерпано! <br>В следующий раз повезет! <br> Правильный ответ был  ' 
+            + randomNum );
             document.getElementById('magic').innerHTML = ' <form id="form" onsubmit="return false">\n' +
-                '                <input type="text" id="input_lag" name="get_num" onkeyup="validate(this)" disabled placeholder=" Введи 4 цифры"\n' +
-                '                       autocomplete="off" \n' +
-                '                       />\n' +
-                '                <input class="submits" type="submit" value="Отправить"/>\n' +
-                '            </form>';
+                '<input type="text" id="input_lag" name="get_num" onkeyup="validate(this)" disabled placeholder=" Введи 4 цифры"\n' +
+                'autocomplete="off" \n' + '/>\n' +
+                '<input class="submits" type="submit" value="Отправить"/>\n' +
+                '</form>';
 
             break;
         }
@@ -62,7 +64,8 @@ function bullsAndCows() {
 
     story.insertAdjacentHTML('afterend', '' +
         '<div style="border:1px solid #aaa;padding:3px 7px; margin: 7px; font-size: 12px">' +
-        'Попытка №' + counter + ' &nbsp; &nbsp;       Введено    -' + uTry + '    &nbsp;   =>  ' + bulls + ' Быков и ' + cows + ' Коров</div>')
+        'Попытка №' + counter + ' &nbsp; &nbsp;  Введено    -' + uTry 
+        + '&nbsp;   =>  ' + bulls + ' Быков и ' + cows + ' Коров</div>')
 }
 
 
