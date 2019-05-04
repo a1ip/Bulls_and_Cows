@@ -3,7 +3,7 @@
 
 const story = document.getElementById('historyTrying');
 const randomNum = createRand(4, 0, 9).join('');
-let counters = 0;
+let counter = 0;
 
 
 // генератор рандомных неповторяющихся чисел.
