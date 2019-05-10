@@ -1,12 +1,25 @@
 {
-  "name": "untitled",
+  "name": "solo",
   "version": "1.0.0",
-  "description": "",
+  "description": "soloist",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-react": "^7.13.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jka4/SANDBOX.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jka4/SANDBOX/issues"
+  },
+  "homepage": "https://github.com/Jka4/SANDBOX#readme"
 }
